@@ -1,4 +1,5 @@
 GEM
+  remote: https://rubygems.org/
   specs:
     activemodel (3.2.13)
       activesupport (= 3.2.13)
@@ -11,6 +12,7 @@ GEM
     builder (3.0.4)
     daemons (1.1.9)
     eventmachine (1.0.3)
+    eventmachine (1.0.3-x86-mingw32)
     i18n (0.6.1)
     mongo (1.9.0)
       bson (~> 1.9.0)
@@ -21,7 +23,7 @@ GEM
       tzinfo (~> 0.3.22)
     moped (1.5.0)
     multi_json (1.7.7)
-    oj (2.1.1)
+    oj (2.0.1)
     origin (1.1.0)
     rack (1.5.2)
     rack-protection (1.5.0)
@@ -50,12 +52,13 @@ GEM
 
 PLATFORMS
   ruby
+  x86-mingw32
 
 DEPENDENCIES
   bson
   mongo
   mongoid
-  oj
+  oj (= 2.0.1)
   sinatra
   sinatra-reloader
   thin
